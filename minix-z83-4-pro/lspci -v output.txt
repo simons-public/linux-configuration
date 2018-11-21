@@ -1,0 +1,59 @@
+00:00.0 Host bridge: Intel Corporation Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series SoC Transaction Register (rev 36)
+	Subsystem: Intel Corporation Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series SoC Transaction Register
+	Flags: bus master, fast devsel, latency 0
+	Kernel driver in use: iosf_mbi_pci
+
+00:02.0 VGA compatible controller: Intel Corporation Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCI Configuration Registers (rev 36) (prog-if 00 [VGA controller])
+	DeviceName:  Onboard IGD
+	Subsystem: Intel Corporation Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCI Configuration Registers
+	Flags: bus master, fast devsel, latency 0, IRQ 170
+	Memory at 90000000 (64-bit, non-prefetchable) [size=16M]
+	Memory at 80000000 (64-bit, prefetchable) [size=256M]
+	I/O ports at f000 [size=64]
+	[virtual] Expansion ROM at 000c0000 [disabled] [size=128K]
+	Capabilities: <access denied>
+	Kernel driver in use: i915
+	Kernel modules: i915
+
+00:14.0 USB controller: Intel Corporation Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series USB xHCI Controller (rev 36) (prog-if 30 [XHCI])
+	Subsystem: Intel Corporation Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series USB xHCI Controller
+	Flags: bus master, medium devsel, latency 0, IRQ 117
+	Memory at 91500000 (64-bit, non-prefetchable) [size=64K]
+	Capabilities: <access denied>
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_pci
+
+00:1a.0 Encryption controller: Intel Corporation Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series Trusted Execution Engine (rev 36)
+	Subsystem: Intel Corporation Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series Trusted Execution Engine
+	Flags: bus master, fast devsel, latency 0, IRQ 163
+	Memory at 91300000 (32-bit, non-prefetchable) [size=1M]
+	Memory at 91200000 (32-bit, non-prefetchable) [size=1M]
+	Capabilities: <access denied>
+	Kernel driver in use: mei_txe
+	Kernel modules: mei_txe
+
+00:1c.0 PCI bridge: Intel Corporation Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCI Express Port #1 (rev 36) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 115
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	I/O behind bridge: 0000e000-0000efff [size=4K]
+	Memory behind bridge: 91400000-914fffff [size=1M]
+	Prefetchable memory behind bridge: None
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:1f.0 ISA bridge: Intel Corporation Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCU (rev 36)
+	Subsystem: Intel Corporation Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCU
+	Flags: bus master, medium devsel, latency 0
+	Capabilities: <access denied>
+	Kernel driver in use: lpc_ich
+	Kernel modules: lpc_ich
+
+01:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 0c)
+	Subsystem: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller
+	Flags: bus master, fast devsel, latency 0, IRQ 16
+	I/O ports at e000 [size=256]
+	Memory at 91404000 (64-bit, non-prefetchable) [size=4K]
+	Memory at 91400000 (64-bit, prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: r8169
+	Kernel modules: r8169
