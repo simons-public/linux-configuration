@@ -9,16 +9,16 @@ Version: V1.1
 Works great for a simple web-browser/video viewer. Streams video from Netflix/Emby with no issues and supports 4K resolution. Quiet and passively cooled. Uses 12VDC input, so may work good as a carpc. Comes with a VESA mount for mounting on the back of a monitor.
 
 ## Specifications
-Processor: Intel X5-Z8350 (64-bit)
-GPU: Intel HD Graphics
-Video Connectors: HDMI, Mini DisplayPort
-Memory: 4GB DDR3L
-Storage: 32GB eMMC 5.0
-Ethernet: Realtek RTL8111/8168/8411 PCI Express
-WiFi: 802.11ac Dual-Band
-Bluetooth: 4.2
-Micro SD card reader
-USB: 3x USB 2.0, 1x USB 3.0
+Processor: Intel X5-Z8350 (64-bit)  
+GPU: Intel HD Graphics  
+Video Connectors: HDMI, Mini DisplayPort  
+Memory: 4GB DDR3L  
+Storage: 32GB eMMC 5.0  
+Ethernet: Realtek RTL8111/8168/8411 PCI Express  
+WiFi: 802.11ac Dual-Band  
+Bluetooth: 4.2  
+Micro SD card reader  
+USB: 3x USB 2.0, 1x USB 3.0  
 
 # Notes & Issues on installing Arch Linux
 
