@@ -93,3 +93,30 @@ ExecStart=/usr/bin/xrandr --output HDMI1 --mode 1920x1080_60.00
 WantedBy=suspend.target
 ```
 The service can be enabled with `systemctl enable resume@USERNAME.service`
+
+## Managing Storage
+Periodic cleaning of the pacman cache can help manage disk storage.  
+`/etc/systemd/system/clean-pacman-cache.service`:
+```shell
+[Unit]
+Description=Clean old pkg files from cache
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'yes | pacman -Sc'
+```
+`/etc/systemd/system/clean-pacman-cache.timer`:
+```shell
+[Unit]
+Description=Clean old pkg files from cache weekly
+After=time-sync.target
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+```
+`systemctl enable clean-pacman-cache.timer`
