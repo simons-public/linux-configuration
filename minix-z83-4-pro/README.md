@@ -44,9 +44,8 @@ When using the main HDMI output the onboard Intel video is recognized by the ker
 The [Linux Documentation](https://github.com/torvalds/linux/blob/master/Documentation/fb/modedb.txt) details a way to force a display to be connected. Adding the kernel option `video=HDMI-A-1:1920x1080@60D` works for forcing the display to be enabled and use digital output, as well as correctly enabling the example resolution (1920x1080) to be detected by Xorg when using the `xf86-video-intel` driver.
 
 ## Networking
-Ethernet works out of the box. Wifi requires firmware. From the [linuxiumcomau.blogspot.com](http://linuxiumcomau.blogspot.com/2017/12/linux-on-minix-neo-z83-4-and-z83-4-pro.html) website, the firmware can be retrieved from `C:\Windows\System32\drivers\4345r6nvram.txt` on the Windows 10 partition which could be mounted from `/dev/mmcblk0p3`. 
+Ethernet works out of the box. Wifi requires firmware for brcmfmac. From the [linuxiumcomau.blogspot.com](http://linuxiumcomau.blogspot.com/2017/12/linux-on-minix-neo-z83-4-and-z83-4-pro.html) website, the firmware can be retrieved from `C:\Windows\System32\drivers\4345r6nvram.txt` on the Windows 10 partition which could be mounted from `/dev/mmcblk0p3`. The file needs to be copied to `/lib/firmware/brcm/brcmfmac43455-sdio.txt`. A copy of this file is uploaded to this repository.
 
-There an easier way with the AUR package [bcm4356a2-firmware](https://aur.archlinux.org/packages/bcm4356a2-firmware/). It uses drivers [from asus](http://dlcdnet.asus.com/pub/ASUS/wireless/USB-BT400/DR_USB_BT400_1201710_Windows.zip), converts the `.hex` files using `hex2hcd` and installs `BCM4356A2-*.hcd` in `/usr/lib/firmware/brcm/`. The drivers should be able to be used by the `brcmfmac` module.
 
 After installing drivers (and `dialog`), wifi-menu works properly, and the created wifi profile can be enabled with `netctl enable PROFILE` and started with `netctl start PROFILE`. This might fail the first time because `wlan0` is up, which can be fixed by running `ip link set wlan0 down` first.
 
